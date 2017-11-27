@@ -1,0 +1,6 @@
+Basic concept of displaying content via Krypton CMS:
+
+Page object is what lays at the bottom of everything displayed while a page object can still dynamically change it's content.
+
+A Page object has a template, content blocks including text and custom functions or variables that will automatically be inserted into the template
+content blocks will also be inserted into the template, yet they can either be local to one page or global and loaded from every page, not restricted by its locality

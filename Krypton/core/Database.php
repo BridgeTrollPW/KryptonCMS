@@ -40,7 +40,7 @@ final class Database
     /**
      * Static constructor, this class can only be constructed once
      *
-     * @return \Kyrpton\core\Database
+     * @return self
      */
     public static function getInstance(): self
     {
@@ -61,7 +61,7 @@ final class Database
     /**
      *
      * @param string $query
-     * @param array $escapeStrings
+     * @param array $escapeStrings = null
      * @throws \PDOException
      * @return \Krypton\core\Database
      */
@@ -116,7 +116,7 @@ final class Database
      *
      * @return array
      */
-    public function fetchSingleCollumn()
+    public function fetchSingleColumn()
     {
         $this->exec();
         return $this->queryString->fetch(\PDO::FETCH_COLUMN);

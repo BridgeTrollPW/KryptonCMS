@@ -1,4 +1,5 @@
 <?php
+// @HACK don't use this
 namespace Krypton\apps;
 
 use Krypton\core\Query;
